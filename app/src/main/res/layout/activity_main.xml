@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ivimghoh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivflag"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvnamecoun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:layout_toRightOf="@+id/ivimghoh"
+                android:fontFamily="serif"
+                android:text="Dummy"
+                android:textColor="#1c94bf"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nonetvredate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnamecoun"
+                android:layout_gravity="center"
+                android:layout_margin="4sp"
+                android:layout_toRightOf="@+id/ivimghoh"
+                android:text="Release Date :"
+                android:textColor="#b8bcbe"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvoodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnamecoun"
+                android:layout_gravity="center"
+                android:layout_margin="4sp"
+                android:layout_toRightOf="@+id/nonetvredate"
+                android:text="Dummy"
+                android:textColor="#b8bcbe"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+                <TextView
+                android:id="@+id/nonetvrelang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvoodate"
+                android:layout_gravity="center"
+                android:layout_margin="4sp"
+                android:layout_toRightOf="@+id/ivimghoh"
+                android:text="Original Language :"
+                android:textColor="#b8bcbe"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvlang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvoodate"
+                android:layout_gravity="center"
+                android:layout_margin="4sp"
+                android:layout_toRightOf="@+id/nonetvrelang"
+                android:text="Dummy"
+                android:textColor="#b8bcbe"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvnonrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15sp"
+                    android:fontFamily="serif"
+                    android:text="Rate : "
+                    android:layout_below="@+id/ivimghoh"
+                    android:textColor="#f577a3"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rbrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivimghoh"
+                    android:numStars="5"
+                    android:layout_toRightOf="@+id/tvnonrate"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
